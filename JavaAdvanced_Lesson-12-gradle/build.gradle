@@ -1,0 +1,18 @@
+
+apply plugin: 'java'
+apply plugin: 'java-library'
+apply plugin: 'war'
+
+compileJava.options.encoding = 'UTF-8'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    runtime 'javax.servlet:servlet-api:4.0.1'
+    runtime 'javax.servlet:jsp:2.3.3'
+    runtime 'javax.servlet:jstl:1.2'
+    runtime 'taglibs:standard:1.1.2'
+}
+
